@@ -1,0 +1,156 @@
+*,body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Inter, sans-serif;
+    color: #000;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.3em;
+}
+
+body{
+ direction: rtl;
+ background-color: #e6e6e6;
+}
+a{
+    color: #000;
+    text-decoration: none;
+}
+li ol ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.container-fluid{
+    width: 100%;
+}
+.container{
+    
+    clear: both;
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+
+}
+[class^="col-"]{
+    float: left;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+.img-responsive{
+    height: auto;
+    width: 100%;
+    display: block;
+}
+.p-0{
+    padding: 0!important;
+}
+.pb-100{
+    padding-bottom: 100px;
+}
+
+.mt-0{
+    margin-top: 0;
+}
+.mb-0{
+    margin-bottom: 0;
+}
+figure{
+    position: relative;
+}
+.relative{
+    position: relative;
+}
+.absolute{
+    position: absolute;
+}
+.mt-30{
+    margin-top: 30px;
+
+}
+.text-center{
+    text-align: center;
+}
+.m-50{
+    margin: 50px;
+}
+.m-20{
+    margin: 20px;
+}
+.mt-15{
+    margin-top: 15px;
+}
+.mt-25{
+    margin-top:25px;
+}
+.m-20px{
+    margin: 20px;
+}
+.mt-5{
+    margin-top: 5px;
+}
+.pt-0{
+    padding-top: 0;
+}
+.ml-150{
+    margin-left: 150px;
+}
+.mt-10{
+    margin-top: 10px;
+}
+.mt-50{
+    margin-top: 50px;
+}
+.mb-20{
+    margin-bottom: 20px;
+}
+.ml-50{
+    margin-left: 50px;
+}
+ptb-100{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.flex{
+    display: flex;
+}
+.pt-50{
+    padding-top: 50px;
+}
+p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.light-blue{
+background-color: #dbf4ff;
+}
+.light-purple{
+    background-color: #d4ccff;
+}
+.light-yellow{
+    background-color: #fdfbc4;
+}
+.mb-100{
+    margin-bottom: 100px;
+}
+h2{
+    color: #000;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-family: Libertinusserif, sans-serif;
+    font-size: 52px;
+    font-weight: 500;
+    line-height: 1.3em;
+}
