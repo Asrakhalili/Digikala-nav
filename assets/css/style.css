@@ -7,15 +7,20 @@
     font-size: 15px;
     font-weight: 500;
     line-height: 1.3em;
+    position: relative;
 }
 
 body{
  direction: rtl;
- background-color: #e6e6e6;
+ background-color: #e6adad;     
 }
 a{
     color: #000;
     text-decoration: none;
+}
+
+.opacity{
+opacity: 1;
 }
 li ol ul{
     margin: 0;
@@ -125,6 +130,13 @@ ptb-100{
 }
 .pt-50{
     padding-top: 50px;
+}
+.plr-15{
+    padding-left: 15px ;
+    padding-right: 15px;
+}
+.pb-15{
+    padding-bottom: 15px;
 }
 p{
     display: block;
