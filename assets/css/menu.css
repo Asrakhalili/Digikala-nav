@@ -1,10 +1,13 @@
 .menu-items{
+    box-shadow: 1px 1px 1px 1px #efefef ;
+    border-radius: 0 0 10px 0;
     width: 240px;
-    height:400px ;
-    background-color: #efefef;
+    height:500px ;
+    background-color:   #f7f7f7;
     display: flex;
     flex-direction: column;
-   
+    top: 0px;
+    right: 263px;
 
 }
 .menu-item img{
@@ -28,11 +31,14 @@ font-size: 13px;
     cursor: pointer;
 }
 .mobile-item{
+    box-shadow: 1px 1px 1px 1px #efefef ;
+    border-radius: 0 0 0 10px;
     background-color: white;
     width: 1000px;
     height: 500px;
-    top: -392px;
-    right: 382px;
+    top: -500px;
+    right: 503px;
+    
 }
 .mobile-items{
     display: flex;
@@ -47,24 +53,44 @@ font-size: 13px;
     
 }
 .brands a{
-    font-weight: 400;
     font-size: 13px;
     opacity: .8;
     padding:7px 5px;
     
 }
 .brands-title{
-    font-weight: 500!important  ;
+opacity: 1!important;
     font-size: 15px!important ;
     display: flex;
     flex-direction: row;
     align-items: center;
-    grid-column-gap: 5px;
     padding-bottom: 10px!important;
 }
-.brands-title img{
+.brands-title img:not(:first-child){
     width: 10px;
     height: 10px;
     padding-top: 1px;
     align-items: center;
+}
+.brands-title img{
+    width: 18px;
+    height: 18px;
+
+}
+.brands a:hover{
+    color: red;
+    transition: 3ms ease-in;
+}
+.mobile-title{
+    color: rgb(75, 193, 209);
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px;
+
+}
+.mobile-title img{
+    width: 16px;
+    height: 16px;
 }
