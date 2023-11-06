@@ -10,6 +10,7 @@
 display: none;
 }
 .first-sec{
+    padding-top: 7px;
     border-bottom: 1px solid rgb(78, 197, 245);
     display: flex;
     text-align: center;
@@ -17,6 +18,7 @@ display: none;
 }
 .search-input input{
     border:none;
+    font-size: 14px;
 }
 .img-search{
     display: flex;
@@ -63,4 +65,7 @@ align-items: center;
 border: .05px solid rgb(212, 209, 209);
 border-radius: 15px;
 opacity: .7;
+}
+.search-input input:focus{
+    outline: none;
 }

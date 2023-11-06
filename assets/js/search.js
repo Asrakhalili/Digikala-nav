@@ -1,8 +1,14 @@
 $(document).ready(function(){
-    $('.search-box').click(function(){
-        $('.search').fadeIn()
+    $('.search-box>span').click(function(e){
+      e.stopPropagation();
+        $('.search').fadeIn();
+     $('.search').find('input').focus() ;
     });
- $('.search').hide()
+
+
+$(document).click(function(){
+    $('.search').hide()
+});
     
 
-})
+});

@@ -19,6 +19,9 @@ a{
     color: #000;
     text-decoration: none;
 }
+.border-none{
+    border: none;
+}
 
 .opacity{
 opacity: 1;

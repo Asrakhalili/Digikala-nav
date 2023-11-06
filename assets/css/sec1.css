@@ -57,7 +57,7 @@ grid-column-gap: 12px;
     grid-column-gap: 5px;
     grid-row-gap: 5px;
     padding: 5px  8px;
-    border:.05px solid  rgba(202, 198, 198, 0.725);
+     border:.05px solid  rgba(202, 198, 198, 0.725); 
     border-radius: 7px;
 
 }
