@@ -6,8 +6,8 @@
     top: 0;
     left: 0;
     z-index: 99;
-     /* display: none;  */
-    padding-right: 270px;
+     display: none; 
+    /* padding-right: 270px; */
     margin-top: 106px;
 
 }
@@ -110,4 +110,8 @@ opacity: 1!important;
 .mobile-title img{
     width: 16px;
     height: 16px;
+}
+.mobile-hover{
+    background-color: white;
+    color: red;
 }

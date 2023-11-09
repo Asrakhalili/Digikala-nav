@@ -1,17 +1,9 @@
 $(document).ready(function(){
     $('.menu-link').hover(function(){
-        // $('.menu-items:first-child').hover()
         $('.bg-menu').show() 
         $('.search').hide()
-        // if($('.menu').next().is(':hover ')){
-
+    $('.menu-item').first().addClass("mobile-hover")
     })  
-    })
-    // $('.menu-link').mouseLeave(function(){
-    //     $('.bg-menu').hide()
-     },function(){
-         $('.bg-menu').hide()
-     
-    //  }}
-//     //  )
+    $('.menu-items').eq(1).removeClass("mobile-hover")
+
 })
