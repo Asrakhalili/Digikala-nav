@@ -1,6 +1,22 @@
-.menu{
-    display: none;
+.bg-menu{
+    background-color: rgba(0, 0, 0, 0.35);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+     /* display: none;  */
+    padding-right: 270px;
+    margin-top: 106px;
+
 }
+
+
+.menu{
+z-index: 100;
+display: flex;
+} 
 .menu-items{
     box-shadow: 1px 1px 1px 1px #efefef ;
     border-radius: 0 0 10px 0;
@@ -9,8 +25,6 @@
     background-color:   #f7f7f7;
     display: flex;
     flex-direction: column;
-    top: 0px;
-    right: 263px;
 
 }
 .menu-item img{
@@ -34,16 +48,16 @@ font-size: 13px;
     cursor: pointer;
 }
 .mobile-item{
+    
     box-shadow: 1px 1px 1px 1px #efefef ;
     border-radius: 0 0 0 10px;
     background-color: white;
     width: 1000px;
     height: 500px;
-    top: -500px;
-    right: 503px;
     
 }
 .mobile-items{
+    overflow-y: scroll;
     display: flex;
     flex-direction:row ;
     margin:10px;
