@@ -57,7 +57,7 @@ font-size: 13px;
     
 }
 .mobile-items{
-    overflow-y: scroll;
+
     display: flex;
     flex-direction:row ;
     margin:10px;

@@ -7,7 +7,8 @@
 
 // })
 $(document).ready(function(){
-$('.menu-link').mouseenter(function(){
+$('.menu-link').mouseenter(function(
+){
     if($(this).is(':hover')){
         $('.bg-menu').show() 
         $('.menu-item').first().addClass("mobile-hover")
@@ -16,6 +17,7 @@ $('.menu-link').mouseenter(function(){
     
 
 })
+
 $('.menu-items').mouseenter(function(){
     if($(this).is(':hover')){
         $('.bg-menu').show() 
@@ -25,7 +27,7 @@ $('.menu-items').mouseenter(function(){
 
 })
 
-$('.menu-items').mouseleave(function(){
+$('.menu').mouseleave(function(){
     if(!$(this).is(':hover')){
         $('.bg-menu').hide() 
     }
@@ -58,5 +60,11 @@ $(document).ready(function(){
     $('.menu-item').eq(0).hover(function(){
      $('.mobile-item').show()
      $('.elec-item').hide();
+    })
+})
+
+$(document).ready(function(){
+    $('.menu-link').click(function(e){
+e.preventDefault()
     })
 })
