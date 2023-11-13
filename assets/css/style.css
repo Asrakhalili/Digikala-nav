@@ -13,7 +13,6 @@
 body{
  direction: rtl;
  /* background-color: #dbf4ff; */
-
 }
 a{
     color: #000;
@@ -180,6 +179,7 @@ h2{
         display: flex;
     
     }
+    /* start right sec  */
     .right-sec{
         width: 80%;
         display: flex;
@@ -210,6 +210,7 @@ h2{
     }
     .search-logo{
         opacity: .5;
+        padding-top: 2px;
     
     }
     
@@ -217,6 +218,8 @@ h2{
         height: 25px;
         width: 25px;
     }
+        /* end right sec  */
+     /* start left sec  */
     .left-sec{
         width: 20%;
     display: flex;
@@ -245,9 +248,9 @@ h2{
         width: 25px;
         height: 25px;
     }
+         /* end left sec  */
 /* end sec1 */
-
-/* start sec2 */
+/* start sec2 nav bar */
 .navigation-bar{
     background-color: white;
 }
@@ -255,6 +258,7 @@ h2{
     display: flex;
     flex-direction: row;
 }
+/* start right navbar */
 .right-nav{
     display: flex;
     flex-direction: row;
@@ -287,6 +291,8 @@ h2{
     font-size: 12px;
     opacity:.8;
 }
+/* end right navbar */
+/* start left navbar */
 .left-nav{
     display: flex;
     align-items: center;
@@ -307,6 +313,7 @@ h2{
     opacity: .8;
 }
 .loc-hover{
+    z-index: 100;
     background-color: rgb(76, 76, 116);
     color: white;
     font-size: 12px;
@@ -322,14 +329,17 @@ h2{
     display: none;
 
 }   
+/*end left navbar */
 /* end sec2 */
+
 /* start search */
 .search{
+    z-index: 100;
     box-shadow: 1px 1px 1.5px 1.5px #eeeeee ;
     background-color: white;
     height:400px ;
     overflow: hidden;
-    width: 570px;
+    width: 559px;
     border-radius: 8px;
 display: none;
 position: absolute;
@@ -397,26 +407,29 @@ opacity: .7;
     outline: none;
 }
 /* end search */
+
 /* start menu */
 .bg-menu{
-    background-color: rgba(0, 0, 0, 0.35);
+    background-color: rgba(0, 0, 0, 0.224);
     width: 100%;
     height: 100vh;
-    position: fixed;
+    position:fixed;
     top: 0;
     left: 0;
     z-index: 99;
      display: none; 
-    /* padding-right: 270px; */
     margin-top: 106px;
 
 }
-
-
 .menu{
 z-index: 100;
 display: flex;
 } 
+.menu-link h4{
+    font-weight: 700;   
+    opacity: 1;
+    color: black;
+}
 .menu-items{
     box-shadow: 1px 1px 1px 1px #efefef ;
     border-radius: 0 0 10px 0;
@@ -604,3 +617,17 @@ opacity: 1!important;
     background:#cdcccc; 
   }
 /*end  scroll-bar */
+.bg{
+    background-color: rgba(0, 0, 0, 0.224);
+    width: 100%;
+    height: 100vh;
+    position:fixed;
+    top: 0;
+    left: 0;
+    z-index: 98;
+     display: none; 
+    margin-top: 106px;
+}
+.link-logo img{
+    opacity: 1;
+}

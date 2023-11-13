@@ -10,9 +10,12 @@ $(document).ready(function(){
 $('.menu-link').mouseenter(function(
 ){
     if($(this).is(':hover')){
-        $('.bg-menu').show() 
+        $('.bg-menu').show()
+        $('body').css('overflow', 'hidden');
         $('.menu-item').first().addClass("mobile-hover")
         $('.search').hide()
+        $('.bg').hide()
+
     }
     
 
@@ -68,3 +71,11 @@ $(document).ready(function(){
 e.preventDefault()
     })
 })
+// $(window).scroll(function(){
+//     if($(this).scrollTop() >=3){
+//         $('.bg-menu').hide()
+//     }else{
+// $('.menu-link').hover(function(){
+//     $('.bg-menu').show()
+// })    }
+// })
