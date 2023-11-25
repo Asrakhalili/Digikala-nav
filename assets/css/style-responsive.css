@@ -1,0 +1,70 @@
+ /* start header responsive*/
+ @media screen and (max-width:1024px){
+    .bg-menu{
+        width: 100%;
+        position:fixed;
+    
+    }
+.menu-items{
+    display: flex;
+    flex-direction: column;
+    padding: 12px 8px;
+    background-color: #efefef;
+    width:100px;
+ max-height: 100%;
+    gap: 25px;
+    box-shadow: .2px .2px .2px .2px rgb(116, 113, 113);
+     overflow-y: scroll;
+     z-index: 99;
+}
+.menu-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    gap: 10px;
+opacity: .9;
+}
+.menu-item img{
+    height: 24px;
+    width: 24px;
+}
+    .container-fluid .container{
+        display: none;
+    }
+        .container-fluid{
+            padding: 10px 7px;
+            box-shadow: .8px  .8px  .8px  .8px rgba(172, 166, 166, 0.267);
+        }
+   
+    }
+    @media screen and (min-width:1024px){
+        .nav-down{
+    display: none;
+}
+.search-full-w{
+    display: none;
+}
+
+        }
+@media screen and (max-width:1669px){
+          .container{
+            clear: both;
+            max-width: 1660px;
+            margin-right: 0px;
+            margin-left: 0px;
+          padding-left: 15px;
+          padding-right: 15px;
+                    }
+                }
+    @media screen and (max-width:1290px){
+        .remove{
+            display: none;
+        }
+        .right-nav a{
+            padding-right: 0;
+        }
+
+                          }
+    /* end header responsive */

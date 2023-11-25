@@ -79,3 +79,22 @@ e.preventDefault()
 //     $('.bg-menu').show()
 // })    }
 // })
+// start nav down jq
+$(document).ready(function(){
+    $(window).resize(function(){
+        if(window.matchMedia('(max-width:1024px)').matches){
+$('nav').hide()
+$('.nav-down-item').eq(1).click(function(e){
+e.preventDefault()
+$('.bg-menu').show()
+
+})
+        }else{
+            $('nav').show()
+        }
+    })
+    $(window).resize()
+})
+
+
+// end nav down jq
