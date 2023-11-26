@@ -1,11 +1,31 @@
  /* start header responsive*/
  @media screen and (max-width:1024px){
-    .bg-menu{
-        width: 100%;
-        position:fixed;
-    
+    .container-fluid .container{
+        display: none;
     }
-.menu-items{
+        .container-fluid{
+            padding: 10px 7px;
+            box-shadow: .8px  .8px  .8px  .8px rgba(172, 166, 166, 0.267);
+        }
+        .container{
+            padding-left: 0;
+            padding-right: 0;
+        }
+   .bg-menu{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    display: none;
+   }
+   .menu{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    height: 100%;
+    position: fixed;
+   }
+   .menu-items{
     display: flex;
     flex-direction: column;
     padding: 12px 8px;
@@ -14,10 +34,11 @@
  max-height: 100%;
     gap: 25px;
     box-shadow: .2px .2px .2px .2px rgb(116, 113, 113);
+align-items: center;
      overflow-y: scroll;
      z-index: 99;
-}
-.menu-item{
+   }
+   .menu-item{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,30 +46,265 @@
     font-size: 10px;
     gap: 10px;
 opacity: .9;
-}
-.menu-item img{
+text-align: center;
+   }
+   .menu-item img{
     height: 24px;
     width: 24px;
+   }
+   .mobile-title{
+    color: rgb(75, 193, 209);
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px 0;
+
 }
-    .container-fluid .container{
-        display: none;
-    }
-        .container-fluid{
-            padding: 10px 7px;
-            box-shadow: .8px  .8px  .8px  .8px rgba(172, 166, 166, 0.267);
-        }
-   
+.mobile-title img{
+    width: 15px;
+    height: 15px;
+
+}
+.mobile-item{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 0 8px;
+overflow-y: scroll;
+font-size: 13px;
+}
+.brands-title{
+    display: flex;
+    flex-direction: row;
+    padding: 22px 0;
+    width: 100%;
+border-bottom: .4px solid rgba(122, 122, 122, 0.219);
+justify-content: space-between;
+z-index: 99;
+align-items: center;
+font-size: 13px;
+opacity: .9;
+}
+
+.line-none{
+    display: none;
+}
+.brands-title img{
+    width: 15px;
+    height: 15px;
+    opacity: .9;
+}
+
+
+
+   .elec-item{
+    display: none;
+   }
+
+
     }
     @media screen and (min-width:1024px){
         .nav-down{
     display: none;
 }
+.bg-menu{
+    background-color: rgba(0, 0, 0, 0.114);
+    width: 100%;
+    height: 100vh;
+    position:fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+     display: none; 
+    margin-top: 106px;
+
+}
+
+.menu{
+    z-index: 100;
+    display: flex;
+    } 
+    .menu-link h4{
+        font-weight: 700;   
+        opacity: 1;
+        color: black;
+    }
+    .menu-items{
+        box-shadow: 1px 1px 1px 1px #efefef ;
+        border-radius: 0 0 10px 0;
+        width: 240px;
+        height:617px ;
+        background-color:   #f7f7f7;
+        display: flex;
+        flex-direction: column;
+    
+    }
+    .menu-item img{
+        width: 25px;
+        height: 25px;
+    }
+    .menu-item{
+        display: flex;
+        flex-direction: row;
+    padding: 13px 5px;
+    align-items: center;
+    justify-content: right;
+    grid-column-gap: 9px;
+    opacity: .9;
+    font-size: 13px;
+    }
+    .menu-item:hover{
+        background-color: white;
+        color: red;
+        transition: .2s ease-in;
+        cursor: pointer;
+    }
+    .mobile-item{
+        
+        box-shadow: 1px 1px 1px 1px #efefef ;
+        border-radius: 0 0 0 10px;
+        background-color: white;
+        width: 1000px;
+        height:617px ;
+        
+    }
+    .mobile-items{
+    
+        display: flex;
+        flex-direction:row ;
+        margin:10px;
+        grid-row-gap: 10px;
+        grid-column-gap: 40px;
+    }
+    .brands{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .brands a{
+        font-size: 13px;
+        opacity: .8;
+        padding:7px 5px;
+        
+    }
+    .brands-title{
+    opacity: 1!important;
+        font-size: 15px!important ;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-bottom: 10px!important;
+    }
+    .brands-title img:not(:first-child){
+        width: 10px;
+        height: 10px;
+        padding-top: 1px;
+        align-items: center;
+    }
+    .brands-title img{
+        width: 18px;
+        height: 18px;
+    
+    }
+    .brands a:hover{
+        color: red;
+        transition: 3ms ease-in;
+    }
+    .mobile-title{
+        color: rgb(75, 193, 209);
+        font-size: 14px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 15px;
+    
+    }
+    .mobile-title img{
+        width: 16px;
+        height: 16px;
+    }
+    .mobile-hover{
+        background-color: white;
+        color: red;
+    }
+    
+    
+    /* end menu */
+    /* start electronic-tools */
+    .elec-item{
+        box-shadow: 1px 1px 1px 1px #efefef ;
+        border-radius: 0 0 0 10px;
+        background-color: white;
+        width: 1000px;
+        height:617px ;
+        overflow-y: scroll;
+        display: none;  
+        z-index: 100;
+        
+    }
+    .elec-items{
+        display: flex;
+        flex-direction:row ;
+        margin:10px;
+        grid-row-gap: 10px;
+        grid-column-gap: 40px;
+    }
+    .elec-col-1{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .elec-col-1 a{
+        font-size: 13px;
+        opacity: .8;
+        padding:7px 5px;
+        
+    }
+    .elec-col-1-title{
+    opacity: 1!important;
+        font-size: 15px!important ;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-bottom: 10px!important;
+    }
+    .elec-col-1-title img:not(:first-child){
+        width: 10px;
+        height: 10px;
+        padding-top: 1px;
+        align-items: center;
+    }
+    .elec-col-1-title img{
+        width: 18px;
+        height: 18px;
+    
+    }
+    .elec-col-1 a:hover{
+        color: red;
+        transition: 3ms ease-in;
+    }
+    .elec-title{
+        color: rgb(75, 193, 209);
+        font-size: 14px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 15px;
+    
+    }
+    .elec-title img{
+        width: 16px;
+        height: 16px;
+    }
 .search-full-w{
     display: none;
 }
 
         }
-@media screen and (max-width:1669px){
+
+@media screen and (max-width:1669px) and (min-width:1024){
           .container{
             clear: both;
             max-width: 1660px;
