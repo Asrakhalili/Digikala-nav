@@ -26,19 +26,21 @@
     position: fixed;
    }
    .menu-items{
+    box-shadow: .5px .5px .5px .5px rgb(101, 101, 101);
     display: flex;
     flex-direction: column;
-    padding: 12px 8px;
     background-color: #efefef;
     width:100px;
+    margin-top: 2px;
  max-height: 100%;
-    gap: 25px;
-    box-shadow: .2px .2px .2px .2px rgb(116, 113, 113);
 align-items: center;
      overflow-y: scroll;
      z-index: 99;
    }
    .menu-item{
+    box-shadow: .5px .5px .5px .5px rgb(224, 224, 224);
+    width: 100px;
+    height: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -128,15 +130,67 @@ opacity: .9;
     margin-bottom: 8px;
 }
 
-
    .elec-item{
-    display: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 0 8px;
+overflow-y: scroll;
+font-size: 13px;
    }
-
+   .elec-title{
+    color: rgb(75, 193, 209);
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px 0;
+   }
+   .elec-title img{
+    width: 15px;
+    height: 15px;
+   }
+.elec-col-1-title{
+    display: flex;
+    flex-direction: row;
+    padding: 22px 0;
+    width: 100%;
+border-bottom: .4px solid rgba(122, 122, 122, 0.219);
+justify-content: space-between;
+z-index: 99;
+align-items: center;
+font-size: 13px;
+opacity: .9;
+}
+.elec-col-1-title img{
+    width: 15px;
+    height: 15px;
+    opacity: .9;
+}
+.mobile-hover{
+    background-color: white;
+    color: red;
+}
+.elec-item{
+    display: none;
+}
+#chevup{
+    width: 15px;
+    height: 15px;
+    opacity: .9;
+    display: none;
+}
 
     }
 
     @media screen and (min-width:1024px){
+.circle-item{
+    display: flex;
+    flex-direction: column;
+}
+
+
         .nav-down{
     display: none;
 }
@@ -148,7 +202,7 @@ opacity: .9;
     top: 0;
     left: 0;
     z-index: 99;
-     display: none; 
+     display: block; 
     margin-top: 106px;
 
 }
@@ -205,9 +259,7 @@ opacity: .9;
     
         display: flex;
         flex-direction:row ;
-        margin:10px;
-        grid-row-gap: 10px;
-        grid-column-gap: 40px;
+        margin:5px;
     }
     .brands{
         display: flex;
@@ -349,12 +401,15 @@ opacity: .9;
           padding-right: 15px;
                     }
                 }
-    @media screen and (max-width:1290px){
+    @media screen and (max-width:1360px){
         .remove{
             display: none;
         }
         .right-nav a{
             padding-right: 0;
+        }
+        .brands-title{
+            font-size: 13px;
         }
 
                           }

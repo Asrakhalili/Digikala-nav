@@ -235,7 +235,10 @@ h2{
         padding: 5px  8px;
          border:.05px solid  rgba(202, 198, 198, 0.725); 
         border-radius: 7px;
-    
+    font-size: 13px;
+    }
+    .button span{
+        font-size: 12px;
     }
     .line img{
         opacity: .1;
@@ -244,8 +247,8 @@ h2{
     
     }
     .button img{
-        width: 25px;
-        height: 25px;
+        width: 20px;
+        height: 20px;
     }
          /* end left sec  */
 /* end sec1 */
