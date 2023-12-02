@@ -28,3 +28,26 @@ $(document).ready(function(){
         return false; 
     })
     })
+    $(document).ready(function(){
+        $(window).resize(function(){
+            if(window.matchMedia('(max-width:1024px)').matches){
+            $('.search-box-w').click(function(){
+                $('.search').slideUp("slow")
+
+            })
+            $('.hide-search-logo').click(function(e){
+                e.preventDefault()
+                $('.search').slideDown()
+                
+            })
+            $('.search-logo-link').click(function(e){
+    e.preventDefault()
+
+})
+            
+            }else{
+
+            }
+        })
+    $(window).resize()
+    })
