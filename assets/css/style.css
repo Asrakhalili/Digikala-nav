@@ -336,6 +336,7 @@ h2{
 
 /* start search */
 .search{
+    padding: 0 ;
     z-index: 100;
     box-shadow: 1px 1px 1.5px 1.5px #eeeeee ;
     background-color: white;

@@ -1,6 +1,6 @@
  /* start header responsive*/
  @media screen and (max-width:1024px){
-    .container-fluid  .container{
+    .right-sec .logo{
         display: none;
     }
     .left-sec{
@@ -185,7 +185,10 @@ opacity: .9;
     display: none;
 }
 /* start seearch box in mobile size */
-.search-box-w{
+.right-sec{
+    width: 100%;
+}
+.search-box{
     margin-right: 0;
     background-color: #efefef;
     width: 100%;
@@ -195,15 +198,18 @@ opacity: .9;
 gap: 10px;
     align-items: center;
 }
-.search-box-w span{
+
+.search-box span{
     opacity: .5;
     font-size: 14px;
 }
 /* end seearch box in mobile size */
 .search{
     width: 100%;
-    height: 100%;
     z-index: 101;
+    border-radius: 0;
+    box-shadow: none;
+height: 100vh;
 }
 .img-search{
     display: none;
